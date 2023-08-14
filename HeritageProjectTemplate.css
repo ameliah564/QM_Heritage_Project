@@ -6,4 +6,211 @@ body{
     background-position:top;
     background-repeat: no-repeat; 
     background-size: cover;
+    overflow: hidden;
   }
+
+/* set container for entire page */
+.container
+{
+    display: grid;
+    padding: 0.7rem;
+    height: 100vh;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+    width:100%;
+    
+}
+
+/* use flexbox in header to make it opposite nav bar and specify place in grid */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    padding-top: 0.5rem;
+    border: 5px black solid;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* customise h1 padding, font-size, colour and font-family */
+h1
+{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: 2em;
+    text-align: center;
+    color: black;
+}
+
+/* no text decoration for any links */
+a
+{
+    text-decoration:none;
+}
+
+.navBarContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90vw;
+  padding: 1em;
+  display: inline-block;
+}
+
+/*Home section of header nav bar */
+.Logo { 
+  order:1;
+  flex-grow:2;
+  justify-content: center;
+  align-items: center;
+}
+
+/*About me section of header nav bar */
+.Home{
+  order:2;
+  flex-grow:2;
+  align-self: center;
+} 
+
+/*Portfolio section of header nav bar */
+.Library{
+  order:3;
+  flex-grow:2;
+  align-items: center;
+}
+
+/*Blog section of header nav bar */
+.Community {
+  order:4;
+  flex-grow:2;
+  align-items: center;
+}
+
+li
+{
+    display: inline-block;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 1rem;
+    text-align: center;
+    color: black;
+}
+
+/* customise links for nav bar by defining text-decor, colour and alignment */
+nav a
+{    
+    text-decoration: none;
+    color: #8a8a8e;
+    text-align: center;
+}
+
+/* when hovering over nav bar elements, change colour of text to black */
+nav a:hover
+{
+    color: black;
+}
+
+/* define all hrs to have border of grey-ish colour and less opacity */
+hr
+{
+    border-top: 0.01rem solid #8a8a8e;
+    opacity: 0.2;
+}
+
+/*define place in grid for first hr*/
+.first-hr
+{
+    grid-column: 1/6;
+    grid-row: 2;
+}
+
+/* for article, define place in grid and padding*/
+article
+{
+    padding-top: 8rem;
+    padding-bottom: 2.5rem;
+    padding-left: 10rem;
+    grid-row: 3;
+    grid-column: 1/6;
+}
+
+/* for text in article, define padding */
+article>section>p
+{
+    padding-left: 0.7rem;
+    padding-top: 1rem;
+}
+
+/* for aside element, define place in grid and padding-left */
+aside
+{
+    padding-left: 10.5rem;
+    padding-bottom: 12rem;
+    grid-column: 1/6;
+    grid-row: 4;
+}
+
+/* style button bg col, text col, font-size, height, width and radius */
+button
+{
+    background-color: #f7f7f7;
+    color: black;
+    font-size: 1rem;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 0.8rem;
+}
+
+/* when hovering over button change cursor, col, bg-col */
+button:hover
+{
+    color: #f7f7f7;
+    background-color: black;
+    cursor: pointer;
+    
+}
+
+/* for h2, define font-family, col and font-size */
+h2
+{
+    color: black;
+    font-size: 3.5rem;
+}
+
+/* for p text, define font-family, font-weight and col */
+p
+{
+    font-weight: bold;
+    color: black;
+}
+
+/* for second hr, define place in grid */
+.second-hr
+{
+    grid-row: 5;
+    grid-column: 1/6;
+}
+
+/* for footer, define place in grid and padding-left */
+footer
+{
+    grid-column: 1/6;
+    grid-row: 6;
+    padding-left: 0.7rem;
+}
+
+/* for footer images (social media icons) define height, width and padding */
+footer>a>img
+{
+    padding-left: 1rem;
+    height: 2.3rem;
+    width: 2.3rem;
+    padding-top: 1rem;
+}
+
+
+/*Styles the nav bar container for the header */
+
+
